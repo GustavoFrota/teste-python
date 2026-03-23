@@ -2,7 +2,7 @@ def identificacao():
     nome = input("Digite o seu nome: ")
     sobrenome = input("Digite o seu sobrenome: ")
 
-    NomeCompleto = nome + sobrenome
+    NomeCompleto = nome + " " + sobrenome
 
     idade = int(input("Digite sua idade: "))
 
