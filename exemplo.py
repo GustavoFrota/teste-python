@@ -6,7 +6,7 @@ def identificacao():
 
     idade = int(input("Digite sua idade: "))
 
-    print(f'Bem-vindo {nome} {sobrenome}!')
+    print(f'Bem-vindo {NomeCompleto}!')
 
     if idade >=18:
         print(f'{nome} é maior de idade.')
