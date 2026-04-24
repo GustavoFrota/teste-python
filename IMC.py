@@ -5,17 +5,15 @@ def calcular():
 
     IMC = peso / (altura * altura)
 
-    if(IMC >= 30):
-        print(f'O IMC de {nome} é {IMC}')
-        print('Situação: Obesidade')
-    elif(IMC <= 29.9):
-        print(f'O IMC de {nome} é {IMC}')
+    print(f'O IMC de {nome} é {IMC:.2f}')
+
+    if(IMC < 18.5):
+        print('Situação: Abaixo do peso')
+    elif(IMC < 25):
         print('Situação: Sobrepeso')
-    elif(IMC <= 24.9):
-        print(f'O IMC de {nome} é {IMC}')
+    elif(IMC <= 30):
         print('Situação: Peso normal')
     else:
-        print(f'O IMC de {nome} é {IMC}')
         print('Situação: Abaixo do peso')
         
 calcular()
