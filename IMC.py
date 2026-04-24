@@ -3,7 +3,7 @@ def calcular():
     peso = float(input("Digite o seu peso em kg: "))
     altura = float(input("Digite a sua altura em Metros: "))
 
-    IMC = peso / (altura * altura)
+    IMC = peso / (altura ** 2)
 
     print(f'O IMC de {nome} é {IMC:.2f}')
 
