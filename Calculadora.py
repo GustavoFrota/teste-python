@@ -1,9 +1,9 @@
 n1 = int(input("Digite o primeiro número: "))
-resultado = input("Digite a operação: ")
+operacao = input("Digite a operação: ")
 n2 = int(input("Digite o segundo número: "))
 
 
-match resultado:
+match operacao:
     case "+":
         resultado = n1 + n2
         print(f'A soma de {n1} + {n2} é {resultado}')
@@ -18,9 +18,9 @@ match resultado:
             resultado = n1 / n2
             print(f'A divisão de {n1} / {n2} é {resultado}')
         else:
-            resultado = "Erro: não é possível dividir com zero."
+            print("Erro: não é possível dividir com zero.")
     case _:
-        resultado = "Operação inválida."
+        print("Operação inválida.")
 
 
     
