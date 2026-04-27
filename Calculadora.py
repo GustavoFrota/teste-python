@@ -6,7 +6,7 @@ match resultado:
     case "+":
         resultado = n1 + n2
     case "-":
-        resultado = n1 + n2
+        resultado = n1 - n2
     case "*":
         resultado = n1 * n2
     case "/":
@@ -17,5 +17,5 @@ match resultado:
     case "_":
         resultado = "Operação inválida"
 
-print(f'O resultado de {n1} {resultado} {n2} é: {resultado}')
+print(f'O resultado de {n1} e {n2} é: {resultado}')
     
