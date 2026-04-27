@@ -19,7 +19,7 @@ match resultado:
             print(f'A divisão de {n1} / {n2} é {resultado}')
         else:
             resultado = "Erro: não é possível dividir com zero."
-    case "_":
+    case _:
         resultado = "Operação inválida."
 
 
