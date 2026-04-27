@@ -21,6 +21,3 @@ match operacao:
             print("Erro: não é possível dividir com zero.")
     case _:
         print("Operação inválida.")
-
-
-    
