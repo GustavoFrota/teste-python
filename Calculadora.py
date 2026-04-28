@@ -19,5 +19,8 @@ match operacao:
             print(f'A divisão de {n1} / {n2} é {resultado}')
         else:
             print("Erro: não é possível dividir com zero.")
+    case "**":
+        resultado = n1 ** n2
+        print(f'A expexponenciação de {n1} ** {n2} é {resultado}')
     case _:
         print("Operação inválida.")
