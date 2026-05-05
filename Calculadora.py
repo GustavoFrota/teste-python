@@ -8,25 +8,22 @@ match operacao:
     case "+":
         resultado = n1 + n2
         print(f'A soma de {n1} + {n2} é {resultado}')
-        print("Encerrando a calculadora")
     case "-":
         resultado = n1 - n2
         print(f'A subtração de {n1} - {n2} é {resultado}')
-        print("Encerrando a calculadora")
     case "*":
         resultado = n1 * n2
         print(f'A multiplicação de {n1} * {n2} é {resultado}')
-        print("Encerrando a calculadora")
     case "/":
         if n2 != 0:
             resultado = n1 / n2
             print(f'A divisão de {n1} / {n2} é {resultado}')
-            print("Encerrando a calculadora")
         else:
             print("Erro: não é possível dividir com zero.")
     case "**":
         resultado = n1 ** n2
-        print(f'A expexponenciação de {n1} ** {n2} é {resultado}')
-        print("Encerrando a calculadora")
+        print(f'A exponenciação de {n1} ** {n2} é {resultado}')
     case _:
         print("Operação inválida.")
+
+print("Encerrando a calculadora")
