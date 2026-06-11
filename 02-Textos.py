@@ -10,7 +10,9 @@ email = email.lower(); #lower converter todas as letras de uma string para minú
 email = email.strip(); #strip é usado para remover espaços em branco
 print(email);
 
-print(len(email)) #len é usada para contar a quantidade de elementos
+print(len(email)); #len é usada para contar a quantidade de elementos
 
-posicao = email.find('@'); #find é usado para procurar uma substring dentro de uma string e retornar a posição onde ela começa.
+posicao = email.find('@'); #find é usado para procurar uma substring dentro de uma string e retornar a posição onde ela começa
 print(posicao);
+
+print(email[0:11]); #pegando um pedaço do email
