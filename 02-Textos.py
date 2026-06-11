@@ -11,3 +11,6 @@ email = email.strip(); #strip é usado para remover espaços em branco
 print(email);
 
 print(len(email)) #len é usada para contar a quantidade de elementos
+
+posicao = email.find('@'); #find é usado para procurar uma substring dentro de uma string e retornar a posição onde ela começa.
+print(posicao);
