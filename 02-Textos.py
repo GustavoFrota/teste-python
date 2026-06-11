@@ -19,3 +19,11 @@ print(email[0:11]); #pegando um pedaço do email
 
 novo_email = email.replace("gmail.com", "yahoo.com.br", 1); #replace é usado para substituir uma parte de uma string por outra
 print(novo_email);
+
+
+nome = "gustavo frota";
+nome = nome.capitalize(); #capitalize Coloca apenas a primeira letra da string em maiúscula e transforma o restante em minúsculas
+print(nome);
+
+nome = nome.title(); #title Coloca a primeira letra de cada palavra em maiúscula e transforma as demais letras em minúsculas
+print(nome);
