@@ -16,3 +16,6 @@ posicao = email.find('@'); #find é usado para procurar uma substring dentro de 
 print(posicao);
 
 print(email[0:11]); #pegando um pedaço do email
+
+novo_email = email.replace("gmail.com", "yahoo.com.br", 1); #replace é usado para substituir uma parte de uma string por outra
+print(novo_email);
