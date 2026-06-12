@@ -13,3 +13,6 @@ print(media);
 
 lista_produtos = ['iphone', 'ipad', 'apple watch', 'airpod', 'macbook']
 print('macbook' in lista_produtos) #irá retornor True
+
+posicao = lista_produtos.index('macbook') #index serve para encontrar a posição de um alemento 
+print(posicao) #irá retornar 4
