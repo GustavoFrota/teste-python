@@ -10,3 +10,6 @@ print(total_vendas)
 media = total_vendas / qtde_vendas
 
 print(media);
+
+lista_produtos = ['iphone', 'ipad', 'apple watch', 'airpod', 'macbook']
+print('macbook' in lista_produtos) #irá retornor True
