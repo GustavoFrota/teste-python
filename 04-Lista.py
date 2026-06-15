@@ -21,3 +21,8 @@ lista_precos = [5000, 7000, 3000, 1000, 10000] #editando uma lista
 novo_preco = lista_precos[0] * 1.1
 lista_precos[0] = novo_preco
 print(novo_preco);
+
+#lista_produtos.remove('macbook') Removendo um item na lista
+item_removido = lista_produtos.pop(4)
+print(lista_produtos)
+print(item_removido)
