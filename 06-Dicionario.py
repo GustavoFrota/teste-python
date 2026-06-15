@@ -19,5 +19,5 @@ print(disc_produtos["iphone"])
 disc_produtos["macbook"] = 1200 #Adicionando um item ao dicionário
 print(disc_produtos)
 
-disc_produtos.pop("macbook")
+disc_produtos.pop("macbook") #Removendo um item do dicionário
 print(disc_produtos)
