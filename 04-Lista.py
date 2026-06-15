@@ -29,3 +29,7 @@ print(item_removido)
 
 lista_produtos.append('iphone 17') #adicionando um item na lista
 print(lista_produtos)
+
+lista2_produtos = ['PC', 'air tag', 'monitor'] 
+lista_produtos.extend(lista2_produtos) #juntando listas
+print(lista_produtos)
