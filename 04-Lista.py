@@ -26,3 +26,6 @@ print(novo_preco);
 item_removido = lista_produtos.pop(4)
 print(lista_produtos)
 print(item_removido)
+
+lista_produtos.append('iphone 17') #adicionando um item na lista
+print(lista_produtos)
