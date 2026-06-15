@@ -20,3 +20,14 @@ else:
     produtos.append(novo_produto)
 
 print(produtos)
+
+vendas = 20000
+
+if vendas >= 15000:
+    bonus = 500
+elif vendas >= 5000:
+    bonus = 100
+else:
+    bonus = 0
+
+print(f"O bônus do funcionário foi de {bonus}")
