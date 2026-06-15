@@ -13,5 +13,8 @@ disc_vendas = {
 
 print(disc_vendas["Guilherme"])
 
-disc_produtos["iphone"] = disc_produtos["iphone"] * 1.1
+disc_produtos["iphone"] = disc_produtos["iphone"] * 1.1 #Modificando itens de um dicionário
 print(disc_produtos["iphone"])
+
+disc_produtos["macbook"] = 1200 #Adicionando um item ao dicionário
+print(disc_produtos)
