@@ -16,3 +16,8 @@ print('macbook' in lista_produtos) #irá retornor True
 
 posicao = lista_produtos.index('macbook') #index serve para encontrar a posição de um alemento 
 print(posicao) #irá retornar 4
+
+lista_precos = [5000, 7000, 3000, 1000, 10000] #editando uma lista
+novo_preco = lista_precos[0] * 1.1
+lista_precos[0] = novo_preco
+print(novo_preco);
