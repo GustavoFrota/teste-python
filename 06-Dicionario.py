@@ -21,3 +21,5 @@ print(disc_produtos)
 
 disc_produtos.pop("macbook") #Removendo um item do dicionário
 print(disc_produtos)
+
+print("iphone" in disc_produtos) #Verificando se um item existe no dicionário
