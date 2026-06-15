@@ -5,3 +5,10 @@ disc_produtos = {
 }
 
 print(disc_produtos["airpod"])
+
+disc_vendas = {
+    "Guilherme": [1000, 500, 1500],
+    "João": [500, 450, 500]
+}
+
+print(disc_vendas["Guilherme"])
