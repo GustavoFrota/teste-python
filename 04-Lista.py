@@ -33,3 +33,6 @@ print(lista_produtos)
 lista2_produtos = ['PC', 'air tag', 'monitor'] 
 lista_produtos.extend(lista2_produtos) #juntando listas
 print(lista_produtos)
+
+lista_produtos.insert(1, 'airpod max') #inserindo um item em uma posição específica
+print(lista_produtos)
