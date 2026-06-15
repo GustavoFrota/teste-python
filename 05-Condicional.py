@@ -9,3 +9,14 @@ if lucro >= 0:
 else:
     print("prejuízo de", lucro)
     print("Deu prejuízo")
+
+produtos = ['iphone', 'ipad', 'airpod']
+novo_produto = input("Digite o nome do produto: ")
+
+if novo_produto in produtos:
+    print("produto já existente")
+else:
+    print(f"{novo_produto} cadastrado com sucesso")
+    produtos.append(novo_produto)
+
+print(produtos)
