@@ -12,3 +12,6 @@ disc_vendas = {
 }
 
 print(disc_vendas["Guilherme"])
+
+disc_produtos["iphone"] = disc_produtos["iphone"] * 1.1
+print(disc_produtos["iphone"])
