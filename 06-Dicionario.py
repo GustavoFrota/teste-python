@@ -41,3 +41,4 @@ if produto_buscado in disc_produtos:
     print(f"produto:  {produto_buscado}, preço: R${preco}" )
 else:
     print("Produto não encontrado")
+    
