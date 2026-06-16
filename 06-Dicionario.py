@@ -23,3 +23,21 @@ disc_produtos.pop("macbook") #Removendo um item do dicionário
 print(disc_produtos)
 
 print("iphone" in disc_produtos) #Verificando se um item existe no dicionário
+
+disc_produtos = {
+    "ipad": 7000,
+    "iphone": 5000,
+    "airpod": 2000,
+    "macbook": 12000
+}
+
+produto_buscado = input("Digite o nome do produto: ")
+produto_buscado = produto_buscado.strip()
+produto_buscado = produto_buscado.lower()
+
+if produto_buscado in disc_produtos:
+    preco = disc_produtos[produto_buscado]
+    print("Produto encontrado")
+    print(f"produto:  {produto_buscado}, preço: R${preco}" )
+else:
+    print("Produto não encontrado")
