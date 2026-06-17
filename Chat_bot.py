@@ -1,3 +1,5 @@
+print("Chatbot iniciado! Digite 'sair' para encerrar.")
+
 while True:
     mensagem = input("Você: ").strip().lower()
 
@@ -13,7 +15,7 @@ while True:
         print("GSO: me chamo GSO, um chatbot criado por Gustavo com respostas limitadas")
     
      case "sair":
-        print("GSO: até logo.")
+        print("GSO: Programa encerrado, até logo.")
         break
 
      case _:
