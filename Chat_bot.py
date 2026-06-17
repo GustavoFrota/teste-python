@@ -1,18 +1,20 @@
 while True:
     mensagem = input("Você: ").strip().lower()
 
-    if mensagem == "oi" or mensagem == "olá" or mensagem == "ola":
+    match mensagem:
+
+     case "oi" | "olá" | "ola":
         print("GSO: Olá, como posso ajudar?")
 
-    elif mensagem == "como você está":
+     case "como você está":
         print("GSO: estou funcionando perfeitamente")
     
-    elif mensagem == "quem é você":
+     case "quem é você":
         print("GSO: me chamo GSO, um chatbot criado por Gustavo com respostas limitadas")
     
-    elif mensagem == "sair":
+     case "sair":
         print("GSO: até logo.")
         break
 
-    else:
+     case _:
         print("GSO: desculpe, não entendi sua pergunta.")
