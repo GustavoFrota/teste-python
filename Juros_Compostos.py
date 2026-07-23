@@ -1,11 +1,9 @@
-c = float(input("Digite o capital: "))
+capital = float(input("Digite o capital: "))
 
-i = float(input("Digite a taxa: "))
+taxa = float(input("Digite a taxa: ")) / 100
 
-taxa = i / 100
+periodo = int(input("Digite o período em meses: "))
 
-n = int(input("Digite o período: "))
+montante = capital * (1 + taxa)**periodo
 
-montante = c * (1 + taxa)**n
-
-print(montante)
+print(f"Montante final: R$ {montante:.2f}")
