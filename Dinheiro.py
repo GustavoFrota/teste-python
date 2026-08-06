@@ -1,30 +1,17 @@
-def calcular():
-    saldo = float(input("Digite o seu saldo: R$"))
+def calccular():
+    while True:
+        try:
+            saldo = float(input("Digite o seu saldo: "))
+            break
+        except ValueError:
+            print("ERRO! Digite apenas números")
 
-    Valor_50 = (saldo * 0.50)
-    valor_20 = (saldo * 0.20)
-    valor_15 = (saldo * 0.15)
-    valor_10 = (saldo * 0.10)
-    valor_5 = (saldo * 0.05)
+    porcentagens = [50, 20, 15, 10, 5]
 
-    print("-" * 40)
+    for porcentagem in porcentagens:
+        valor = saldo * porcentagem / 100
 
-    print("REGRA 50/20/15/10/5")
+        print('-' * 40)
+        print(f"{porcentagem}% de R${saldo:.2f} é R${valor:.2f}")
 
-    print("-" * 40)
-    print(f"50% de {saldo} é: R${Valor_50:.2f}")
-
-    print("-" * 40)
-    print(f"20% de {saldo} é: R${valor_20:.2f}")
-
-    print("-" * 40)
-    print(f"15% de {saldo} é R${valor_15:.2f}")
-
-    print("-" * 40)
-    print(f"10% de {saldo} é R${valor_10:.2f}")
-
-    print("-" * 40)
-    print(f"5% de {saldo} é R${valor_5:.2f}")
-
-
-calcular()
+calccular()
