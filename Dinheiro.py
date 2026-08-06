@@ -8,6 +8,10 @@ def calcular():
     valor_5 = (saldo * 0.05)
 
     print("-" * 40)
+
+    print("REGRA 50/20/15/10/5")
+
+    print("-" * 40)
     print(f"50% de {saldo} é: R${Valor_50:.2f}")
 
     print("-" * 40)
