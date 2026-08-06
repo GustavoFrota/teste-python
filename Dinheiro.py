@@ -1,4 +1,4 @@
-def calccular():
+def calcular():
     while True:
         try:
             saldo = float(input("Digite o seu saldo: "))
@@ -14,4 +14,4 @@ def calccular():
         print('-' * 40)
         print(f"{porcentagem}% de R${saldo:.2f} é R${valor:.2f}")
 
-calccular()
+calcular()
