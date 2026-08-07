@@ -7,6 +7,9 @@ def calcular():
             print("ERRO! Digite apenas números")
 
     porcentagens = [50, 20, 15, 10, 5]
+    print('-' * 40)
+
+    print("ORGANIZANDO RENDA")
 
     for porcentagem in porcentagens:
         valor = saldo * porcentagem / 100
