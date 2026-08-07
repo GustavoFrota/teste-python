@@ -15,6 +15,6 @@ def calcular():
         valor = saldo * porcentagem / 100
 
         print('-' * 40)
-        print(f"{porcentagem}% de R${saldo:.2f} é R${valor:.2f}")
+        print(f"{porcentagem}% de R${saldo:.2f} --> R${valor:.2f}")
 
 calcular()
