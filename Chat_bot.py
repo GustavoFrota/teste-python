@@ -1,6 +1,7 @@
-print("Chatbot iniciado! Digite 'sair' para encerrar.")
+def chatbot():
+ print("Chatbot iniciado! Digite 'sair' para encerrar.")
 
-while True:
+ while True:
     mensagem = input("Você: ").strip().lower()
 
     match mensagem:
@@ -14,9 +15,11 @@ while True:
      case "quem é você"| "quem é voce" | "quem é vc":
         print("GSO: me chamo GSO, um chatbot criado por Gustavo com respostas limitadas")
     
-     case "sair":
+     case "sair" | "tchau":
         print("GSO: Programa encerrado, até logo.")
         break
 
      case _:
         print("GSO: desculpe, não entendi sua pergunta.")
+
+chatbot()
