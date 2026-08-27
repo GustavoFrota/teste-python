@@ -16,9 +16,15 @@ def chatbot():
         print("GSO: me chamo GSO, um chatbot criado por Gustavo com respostas limitadas")
 
      case 'calcular': #Em andamento
-            dinheiro = float(input('Digite o seu saldo: '))
+            while True:
+               try:
+                  dinheiro = float(input('Digite o seu saldo: '))
+               except ValueError:
+                print('Erro! Digite apenas números')
+                essencial = dinheiro 
+            
               
-            print('GSO: calculando...') 
+                 
           
     
      case "sair" | "tchau":
