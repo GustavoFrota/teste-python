@@ -15,8 +15,10 @@ def chatbot():
      case "quem é você"| "quem é voce" | "quem é vc":
         print("GSO: me chamo GSO, um chatbot criado por Gustavo com respostas limitadas")
 
-     case 'calcular':
-          print('GSO: calculando...') #Em andamento
+     case 'calcular': #Em andamento
+            dinheiro = float(input('Digite o seu saldo: '))
+              
+            print('GSO: calculando...') 
           
     
      case "sair" | "tchau":
