@@ -31,4 +31,4 @@ try:
 except ValueError:
  print("Erro: você precisa digitar números válidos.")
 
- print("Encerrando a calculadora")
+print("Calculadora encerrada")
