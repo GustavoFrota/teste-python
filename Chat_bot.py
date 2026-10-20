@@ -1,3 +1,5 @@
+from time import sleep
+
 def chatbot():
  print("Chatbot iniciado! Digite 'sair' para encerrar.")
 
@@ -7,12 +9,15 @@ def chatbot():
     match mensagem:
 
      case "oi" | "olá" | "ola":
+        sleep(1)
         print("GSO: Olá, como posso ajudar?")
 
      case "como você está":
+        sleep(1)
         print("GSO: estou funcionando perfeitamente")
     
      case "quem é você"| "quem é voce" | "quem é vc":
+        sleep(1)
         print("GSO: me chamo GSO, um chatbot criado por Gustavo com respostas limitadas")
 
      case "sair" | "tchau":
@@ -20,6 +25,7 @@ def chatbot():
         break
 
      case _:
+        sleep(1)
         print("GSO: desculpe, não entendi sua pergunta.")
 
 chatbot()
