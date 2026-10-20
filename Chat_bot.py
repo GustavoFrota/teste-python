@@ -12,7 +12,7 @@ def chatbot():
         sleep(1)
         print("GSO: Olá, como posso ajudar?")
 
-     case "como você está":
+     case "como você está" | "como vc está" | "como vai" | "como vc esta" | "como voce esta":
         sleep(1)
         print("GSO: estou funcionando perfeitamente")
     
