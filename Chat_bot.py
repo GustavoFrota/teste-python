@@ -15,7 +15,11 @@ def chatbot():
      case "como você está" | "como vc está" | "como vai" | "como vc esta" | "como voce esta":
         sleep(1)
         print("GSO: estou funcionando perfeitamente")
-    
+
+     case "Tudo bem" | "Tudo bom" | "Tá tudo bem":
+          sleep(1)
+          print("GSO: Tudo ótimo por aqui!")
+          
      case "quem é você"| "quem é voce" | "quem é vc":
         sleep(1)
         print("GSO: me chamo GSO, um chatbot criado por Gustavo com respostas limitadas")
