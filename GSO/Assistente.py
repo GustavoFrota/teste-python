@@ -1,6 +1,7 @@
 from time import sleep
 
 def calcular():
+  try:
     print('Iniciando calculadora')
     print(""" 
     SOMA(+)
@@ -26,7 +27,9 @@ def calcular():
     elif operacao == '**':
         print(f'A exponenciação de {n1} ** {n2} é {n1**n2}')
     else:
-        print('Sinal de Operação inválido')
+        print('ERRO: Sinal de Operação inválido')
+  except ValueError:
+      print('ERRO: Você precisa digitar números válidos')
 
 
 def chatbot():
