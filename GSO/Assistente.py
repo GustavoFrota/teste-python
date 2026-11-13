@@ -1,6 +1,6 @@
 from time import sleep
 
-def calcular():
+def calculadora():
   try:
     print('Iniciando calculadora')
     print(""" 
@@ -44,6 +44,6 @@ def chatbot():
                 print('GSO: Programa encerrado!')
                 break
             case 'calcular':
-                calcular()
+                calculadora()
 
 chatbot()
