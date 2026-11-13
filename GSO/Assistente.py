@@ -1,6 +1,6 @@
 from time import sleep
 
-gso = 'GSO>'
+gso = 'GSO>' # Variável global
 
 def calculadora():
   try:
@@ -37,6 +37,18 @@ def imc():
     nome = input(f'{gso} Digite o seu nome: ')
     peso = float(input(f'{gso} Digite o seu peso: '))
     altura = float(input(f'{gso} Digite a sua altura: '))
+    IMC = peso / (altura**2)
+
+    print(f'{gso} O imc de {nome} é {IMC:.2f}')
+
+    if IMC < 18.5:
+        print(f'{gso} Situação: Abaixo do peso')
+    elif IMC < 25:
+        print(f'{gso} Situação: Peso normal')
+    elif IMC < 30:
+        print(f'{gso} Situação: Sobrepeso')
+    else:
+        print(f'{gso} Situação: Obesidade')
 
 
 
