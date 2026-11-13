@@ -1,5 +1,7 @@
 from time import sleep
 
+gso = 'GSO>'
+
 def calculadora():
   try:
     print('Iniciando calculadora')
@@ -9,41 +11,51 @@ def calculadora():
     MULTIPLICAÇÃO(*)
     DIVISÃO(/)
     EXPONENCIAÇÃO(**)""")
-    n1 = float(input('Digite o primeiro número: '))
-    n2 = float(input('Digite o segundo número: '))
-    operacao = input('Digite o sinal de operação: ')
+    n1 = float(input(f'{gso} Digite o primeiro número: '))
+    n2 = float(input(f'{gso} Digite o segundo número: '))
+    operacao = input(f'{gso} Digite o sinal de operação: ')
 
     if operacao == '+':
-        print(f'A soma de {n1} + {n2} é {n1+n2:.2f}')
+        print(f'{gso} A soma de {n1} + {n2} é {n1+n2:.2f}')
     elif operacao == '-':
-        print(f'A subtração de {n1} - {n2} é {n1-n2:.2f}')
+        print(f'{gso} A subtração de {n1} - {n2} é {n1-n2:.2f}')
     elif operacao == '*':
-        print(f'A multiplicação de {n1} * {n2} é {n1*n2:.2f}')
+        print(f'{gso} A multiplicação de {n1} * {n2} é {n1*n2:.2f}')
     elif operacao == '/':
         if n2 ==0:
             print('ERRO: Impossível dividir por ZERO!')
         else:
-            print(f'A divisão de {n1} / {n2} é {n1/n2:.2f}')
+            print(f'{gso} A divisão de {n1} / {n2} é {n1/n2:.2f}')
     elif operacao == '**':
-        print(f'A exponenciação de {n1} ** {n2} é {n1**n2}')
+        print(f'{gso} A exponenciação de {n1} ** {n2} é {n1**n2}')
     else:
         print('ERRO: Sinal de Operação inválido')
   except ValueError:
       print('ERRO: Você precisa digitar números válidos')
+
+def imc():
+    nome = input(f'{gso} Digite o seu nome: ')
+    peso = float(input(f'{gso} Digite o seu peso: '))
+    altura = float(input(f'{gso} Digite a sua altura: '))
+
 
 
 def chatbot():
     print('Chatbot iniciado! Digite "sair" para encerrar o programa')
 
     while True:
-        mensagem = input('Você: ').strip().lower()
+        mensagem = input('Você> ').strip().lower()
 
         match mensagem:
             case 'sair' | 'cls':
                 sleep(1)
-                print('GSO: Programa encerrado!')
+                print(f'{gso} Programa encerrado!')
                 break
+
             case 'calcular':
                 calculadora()
+
+            case 'imc':
+                imc()
 
 chatbot()
