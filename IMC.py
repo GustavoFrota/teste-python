@@ -14,6 +14,6 @@ def calcular():
     elif(IMC <= 30):
         print('Situação: Peso normal')
     else:
-        print('Situação: Abaixo do peso')
+        print('Situação: Obesidade')
         
 calcular()
