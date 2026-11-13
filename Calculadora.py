@@ -9,22 +9,22 @@ try:
  match operacao:
     case "+":
         resultado = n1 + n2
-        print(f'A soma de {n1} + {n2} é {resultado}')
+        print(f'A soma de {n1} + {n2} é {resultado:.2f}')
     case "-":
         resultado = n1 - n2
-        print(f'A subtração de {n1} - {n2} é {resultado}')
+        print(f'A subtração de {n1} - {n2} é {resultado:.2f}')
     case "*":
         resultado = n1 * n2
-        print(f'A multiplicação de {n1} * {n2} é {resultado}')
+        print(f'A multiplicação de {n1} * {n2} é {resultado:.2f}')
     case "/":
         if n2 != 0:
             resultado = n1 / n2
-            print(f'A divisão de {n1} / {n2} é {resultado}')
+            print(f'A divisão de {n1} / {n2} é {resultado:.2f}')
         else:
             print("Erro: não é possível dividir com zero.")
     case "**":
         resultado = n1 ** n2
-        print(f'A exponenciação de {n1} ** {n2} é {resultado}')
+        print(f'A exponenciação de {n1} ** {n2} é {resultado:.2f}')
     case _:
         print("Operação inválida.")
 
