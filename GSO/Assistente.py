@@ -39,7 +39,7 @@ def chatbot():
         mensagem = input('Você: ').strip().lower()
 
         match mensagem:
-            case 'sair':
+            case 'sair' | 'cls':
                 sleep(1)
                 print('GSO: Programa encerrado!')
                 break
