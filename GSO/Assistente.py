@@ -50,10 +50,12 @@ def imc():
     else:
         print(f'{gso} Situação: Obesidade')
 
-
-
 def chatbot():
     print('Chatbot iniciado! Digite "sair" para encerrar o programa')
+    print("""Programas:
+Calcular
+imc
+""")
 
     while True:
         mensagem = input('Você> ').strip().lower()
