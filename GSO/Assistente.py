@@ -67,9 +67,11 @@ imc
                 break
 
             case 'calcular':
+                sleep(1)
                 calculadora()
 
             case 'imc':
+                sleep(1)
                 imc()
 
 chatbot()
