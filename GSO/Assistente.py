@@ -34,6 +34,7 @@ def calculadora():
       print('ERRO: Você precisa digitar números válidos')
 
 def imc():
+   try:
     nome = input(f'{gso} Digite o seu nome: ')
     peso = float(input(f'{gso} Digite o seu peso: '))
     altura = float(input(f'{gso} Digite a sua altura: '))
@@ -42,13 +43,15 @@ def imc():
     print(f'{gso} O imc de {nome} é {IMC:.2f}')
 
     if IMC < 18.5:
-        print(f'{gso} Situação: Abaixo do peso')
+        print(f'{gso} Situação: Abaixo do peso.')
     elif IMC < 25:
-        print(f'{gso} Situação: Peso normal')
+        print(f'{gso} Situação: Peso normal.')
     elif IMC < 30:
-        print(f'{gso} Situação: Sobrepeso')
+        print(f'{gso} Situação: Sobrepeso.')
     else:
-        print(f'{gso} Situação: Obesidade')
+        print(f'{gso} Situação: Obesidade.')
+   except ValueError:
+       print('ERRO: Digite valores númericos válidos!')
 
 def chatbot():
     print('Chatbot iniciado! Digite "sair" para encerrar o programa')
