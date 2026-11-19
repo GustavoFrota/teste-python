@@ -83,6 +83,6 @@ imc
                 imc()
 
             case _:
-                print(f'{gso} O Comando {mensagem} não é reconhecido!')
+                print(f'{gso} O Comando "{mensagem}" não é reconhecido!')
 
 chatbot()
