@@ -82,4 +82,7 @@ imc
                 sleep(1)
                 imc()
 
+            case _:
+                print(f'{gso} Comando não reconhecido!')
+
 chatbot()
