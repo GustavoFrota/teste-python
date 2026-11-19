@@ -23,21 +23,26 @@ def calculadora():
         print(f'{gso} A multiplicação de {n1} * {n2} é {n1*n2:.2f}')
     elif operacao == '/':
         if n2 ==0:
-            print('ERRO: Impossível dividir por ZERO!')
+            print(f'{gso} ERRO: Impossível dividir por ZERO!')
         else:
             print(f'{gso} A divisão de {n1} / {n2} é {n1/n2:.2f}')
     elif operacao == '**':
         print(f'{gso} A exponenciação de {n1} ** {n2} é {n1**n2}')
     else:
-        print('ERRO: Sinal de Operação inválido')
+        print(f'{gso} ERRO: Sinal de Operação inválido')
   except ValueError:
-      print('ERRO: Você precisa digitar números válidos')
+      print(f'{gso} ERRO: Você precisa digitar números válidos')
 
 def imc():
    try:
     nome = input(f'{gso} Digite o seu nome: ')
     peso = float(input(f'{gso} Digite o seu peso: '))
     altura = float(input(f'{gso} Digite a sua altura: '))
+
+    if altura <= 0 or peso <= 0:
+            print(f'{gso} ERRO: peso e altura devem ser positivos!')
+            return
+
     IMC = peso / (altura**2)
 
     print(f'{gso} O imc de {nome} é {IMC:.2f}')
@@ -51,7 +56,7 @@ def imc():
     else:
         print(f'{gso} Situação: Obesidade.')
    except ValueError:
-       print('ERRO: Digite valores númericos válidos!')
+       print(f'{gso} ERRO: Digite valores númericos válidos!')
 
 def chatbot():
     print('Chatbot iniciado! Digite "sair" para encerrar o programa')
