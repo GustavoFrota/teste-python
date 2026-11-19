@@ -27,7 +27,7 @@ def calculadora():
         else:
             print(f'{gso} A divisão de {n1} / {n2} é {n1/n2:.2f}')
     elif operacao == '**':
-        print(f'{gso} A exponenciação de {n1} ** {n2} é {n1**n2}')
+        print(f'{gso} A exponenciação de {n1} ** {n2} é {n1**n2:.2f}')
     else:
         print(f'{gso} ERRO: Sinal de Operação inválido')
   except ValueError:
@@ -83,6 +83,6 @@ imc
                 imc()
 
             case _:
-                print(f'{gso} Comando não reconhecido!')
+                print(f'{gso} O Comando {mensagem} não é reconhecido!')
 
 chatbot()
